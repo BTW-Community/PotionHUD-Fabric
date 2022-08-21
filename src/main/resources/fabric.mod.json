@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "potionhud",
+  "version": "${version}",
+
+  "name": "1.9 Potion HUD",
+  "description": "Backports the potion effect HUD from Minecraft 1.9",
+  "authors": [
+    "IssaMe"
+  ],
+  "contact": {
+    "homepage": "https://github.com/BTW-Community/1.9-Potion-HUD/releases/latest",
+    "sources": "https://github.com/BTW-Community/1.9-Potion-HUD"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "init": [
+      "issame.potionhud.PotionHUD"
+    ],
+    "preLaunch": [
+    ]
+  },
+  "mixins": [
+    "potionhud.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
