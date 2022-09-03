@@ -85,7 +85,6 @@ configurations.all {
 }
 
 loom {
-    refmapName = 'mixins.modid.refmap.json'
 }
 
 processResources {
